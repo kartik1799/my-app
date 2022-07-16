@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/kartik1799/my-app/static/css/main.073c9b0a.css",
+    "main.js": "/kartik1799/my-app/static/js/main.8807f02e.js",
+    "static/js/787.28cb0dcd.chunk.js": "/kartik1799/my-app/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "/kartik1799/my-app/index.html",
+    "main.073c9b0a.css.map": "/kartik1799/my-app/static/css/main.073c9b0a.css.map",
+    "main.8807f02e.js.map": "/kartik1799/my-app/static/js/main.8807f02e.js.map",
+    "787.28cb0dcd.chunk.js.map": "/kartik1799/my-app/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.8807f02e.js"
+  ]
+}
