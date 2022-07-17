@@ -64,7 +64,7 @@ export default function TextForm(props) {
     </div>
     <div className={`container my-3 text-${props.mode=="light"?"dark":"light"}`}>
         <h2>Text Summary</h2>
-        <p>{text.split(" ").filter(word => word !=="").length} words,{text.length} characters</p>
+        <p>{text.split(/\s+/).filter(word => word !=="").length} words,{text.length} characters</p>
         <br/>
         <h2>Text Preview</h2>
         <p>{text.length>0?text:"Enter some text to preview it."}</p>

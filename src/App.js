@@ -19,6 +19,8 @@ function App() {
 
   const [alert,setAlert]=useState(null)
 
+  const [mystyle,setMyStyle]=useState(null)
+
   const showAlert=(message,type)=>{
     setAlert({
       message:message,
@@ -29,12 +31,13 @@ function App() {
     }, 2000);
   }
 
-  const toggle=()=>{
+  const toggle=(cls)=>{
     if(mode=="light")
     {
       setMode("dark")
       setBtnText("Enable Light Mode")
       document.body.style.backgroundColor="#042743"
+      setMyStyle("#042743")
       showAlert("Dark mode has been enabled","success")
     }
     else
@@ -42,6 +45,7 @@ function App() {
       setMode("light")
       setBtnText("Enable Dark Mode","success")
       document.body.style.backgroundColor="white"
+      setMyStyle('white')
       showAlert("Light mode has been enabled","success")
     }
 
@@ -56,7 +60,7 @@ function App() {
     <div className="container">
       <Routes>
           <Route exact path="/about"
-            element={<About />}/>
+            element={<About mode={mode} mystyle={mystyle}/>}/>
           <Route exact path="/"
             element={<TextForm showAlert={showAlert} heading="Enter the text" mode={mode}/>}/>
       </Routes>
